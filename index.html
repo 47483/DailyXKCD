@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily XKCD</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <script defer src="js/fetchComic.js"></script>
+    <script defer src="js/background.js"></script>
+</head>
+<body>
+    <canvas id="bgCanvas"></canvas>
+    <div id="pageContent">
+        <header class="box"><h1>Daily XKCD</h1></header>
+        <main class="box">
+            <div id="navComic">
+                <ul>
+                    <li id="first" class="button">First</li>
+                    <li id="previous" class="button">Previous</li>
+                    <li id="random" class="button">Random</li>
+                    <li id="next" class="button">Next</li>
+                    <li id="last" class="button">Last</li>
+                </ul>
+            </div>
+            <div id="mainComic"></div>
+        </main>
+
+        <footer class="box"><a href="https://xkcd.com/">Comics by XKCD</a> - CC BY NC 2.5</footer>
+    </div>
+</body>
+</html>
