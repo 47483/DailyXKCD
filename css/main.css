@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    font-family: "Poppins";
+    text-shadow: 1px 1px 2px #404040;
+}
+
+body {
+    background-color: #404040;
+    color: white;
+}
+
+@keyframes buttonIn {
+    0% {background-color: #707070;}
+    100% {background-color: #505050;}
+}
+
+@keyframes buttonOut {
+    0% {background-color: #505050;}
+    100% {background-color: #707070;}
+}
+
+.button {
+    background-color: #707070;
+    user-select: none;
+    display: inline-block;
+    padding: 1vh;
+    border-radius: 1vh;
+    animation: buttonOut 0.25s forwards;
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+    font-size: 1em;
+
+}
+
+.button:hover {
+    border-radius: 1vh;
+    animation: buttonIn 0.25s forwards;
+}
+
+.box {
+    background-color: #606060;
+    border-radius: 1vh;
+    text-align: center;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 16vw;
+    margin-right: 16vw;
+    padding: 1vh;
+}
+
+h2, h3 {
+    font-weight: 200;
+}
+
+#mainComic {
+    background-color: #707070;
+    border-radius: 1vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    
+}
+
+#comicImage {
+    max-width: 50vw;
+    border: 0.5vh dashed #ffffff;
+}
+
+ul {
+    padding-inline-start: 0px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#bgCanvas {
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    bottom: 0;
+}
+
+#pageContent {
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
